@@ -3,6 +3,8 @@ body{
 
     margin: 0;
     background-color: lightblue;
+    width: 100%;
+    height: 100%;
 
 }
 .container{
@@ -24,10 +26,18 @@ body{
 .menu{
 
     font-size: 20px;
-    height: 3%;
+    height: 9%;
     width: 100%;
     float:left;
+    text-align: center;
     background-color: #fca980;
+
+}
+.menu > p{
+
+    text-align: center;
+    display: inline-block;
+    margin: 15px;
 
 }
 .blank-l-up{
@@ -106,6 +116,7 @@ body{
     height: 5%;
     background-color: #fca980;
     float: left;
+    border: 1px solid black;
 
 }
 #space{
@@ -141,5 +152,42 @@ body{
 
     width: 70%;
     height: 20%;
+
+}
+#rotate{
+
+    rotate: 0deg;
+
+
+}
+@keyframes rotating-zero-ninety{
+    from {rotate: 0deg; background-color: white; border-radius: 0%;}
+    to {rotate: 180deg; background-color: aqua; border-radius: 20%;}
+}
+#rotate:hover{
+
+    background-color: #FFE98A;
+    animation-name: rotating-zero-ninety;
+    animation-duration: 3s;
+
+}
+@keyframes cam {
+    from {background-color: #fca980; font-size: 12px;}
+    to {background-color: #FFE98A; font-size: 16px;}
+}
+#cameleon{
+
+    font-size: 12px;
+
+}
+#cameleon:hover{
+
+    animation-name: cam;
+    animation-duration: 3s;
+
+}
+a{
+    text-decoration: none;
+    color: black;
 
 }
