@@ -79,6 +79,8 @@ body{
 
     font-size: 20px;
     height: 5%;
+    text-align: center;
+    padding-top: 7px;
     clear:both; /* */
     background-color: #fca980;
 
@@ -127,5 +129,17 @@ body{
 #bottom{
 
     clear: both;
+
+}
+#column{
+
+    column-count: 3;
+    column-gap: 10px;
+
+}
+#column > img{
+
+    width: 70%;
+    height: 20%;
 
 }
